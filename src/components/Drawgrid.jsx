@@ -10,21 +10,15 @@ class DrawGrid extends Component {
   render() {
     return (
       <div className="container">
-        {/* <table className="grid">
-          <tbody>
-            <tr>
-              {this.props.seat.map((row) => (
-                <td key={row} onClick={(e) => this.onClickSeat(row)}>
-                  <FontAwesomeIcon icon={faChair} />
-                </td>
-              ))}
-            </tr>
-          </tbody>
-
-        </table> */}
+       
         <Table seat={this.props.seat} id={0} onclick={this.props.onClickData} />
-        <Table seat={this.props.seat} id={5} onclick={this.props.onClickData} />
-        <Table seat={this.props.seat} id={9} onclick={this.props.onClickData} />
+        <Table seat={this.props.seat} id={4} onclick={this.props.onClickData} />
+        <Table seat={this.props.seat} id={7} onclick={this.props.onClickData} />
+        <Table
+          seat={this.props.seat}
+          id={10}
+          onclick={this.props.onClickData}
+        />
         <Table
           seat={this.props.seat}
           id={13}
@@ -32,19 +26,27 @@ class DrawGrid extends Component {
         />
         <Table
           seat={this.props.seat}
-          id={17}
+          id={16}
           onclick={this.props.onClickData}
         />
         <Table
           seat={this.props.seat}
-          id={21}
+          id={19}
+          onclick={this.props.onClickData}
+        />
+        <Table
+          seat={this.props.seat}
+          id={22}
+          onclick={this.props.onClickData}
+        />
+        <Table
+          seat={this.props.seat}
+          id={25}
           onclick={this.props.onClickData}
         />
         <div className="instructor">
           <p>Instructor</p>
         </div>
-        <AvailableList available={this.props.available} />
-        <ReservedList reserved={this.props.reserved} />
       </div>
     );
   }

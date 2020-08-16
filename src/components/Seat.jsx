@@ -31,6 +31,9 @@ class Seat extends Component {
         "Agent22",
         "Agent23",
         "Agent24",
+        "Agent25",
+        "Agent26",
+        "Agent27",
       ],
       seatAvailable: [
         "Agent1",
@@ -57,6 +60,9 @@ class Seat extends Component {
         "Agent22",
         "Agent23",
         "Agent24",
+        "Agent25",
+        "Agent26",
+        "Agent27",
       ],
       seatReserved: [],
     };
@@ -79,7 +85,6 @@ class Seat extends Component {
   render() {
     return (
       <div>
-        <h5 className="seathead">Select a Seat</h5>
         <DrawGrid
           seat={this.state.seat}
           available={this.state.seatAvailable}

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { faChair } from "@fortawesome/free-solid-svg-icons";
+import { faChair, faStop } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 class Table extends Component {
   state = {};
@@ -19,7 +19,7 @@ class Table extends Component {
               this.handleClick(this.props.id);
             }}
           >
-            <FontAwesomeIcon icon={faChair} />
+            <FontAwesomeIcon icon={faStop} />
           </div>
           <div
             id={this.props.id + 1}
@@ -27,7 +27,7 @@ class Table extends Component {
               this.handleClick(this.props.id + 1);
             }}
           >
-            <FontAwesomeIcon icon={faChair} />
+            <FontAwesomeIcon icon={faStop} />
           </div>
           <div
             id={this.props.id + 2}
@@ -35,15 +35,7 @@ class Table extends Component {
               this.handleClick(this.props.id + 2);
             }}
           >
-            <FontAwesomeIcon icon={faChair} />
-          </div>
-          <div
-            id={this.props.id + 3}
-            onClick={(e) => {
-              this.handleClick(this.props.id + 3);
-            }}
-          >
-            <FontAwesomeIcon icon={faChair} />
+            <FontAwesomeIcon icon={faStop} />
           </div>
         </div>
         <div className="table"></div>
